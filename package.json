@@ -1,0 +1,25 @@
+{
+  "name": "todo_app_js",
+  "version": "1.0.0",
+  "description": "Practice JS with CodersInHoods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodersInHoods/Todo_app_js.git"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "CodersInHoods",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodersInHoods/Todo_app_js/issues"
+  },
+  "homepage": "https://github.com/CodersInHoods/Todo_app_js#readme",
+  "devDependencies": {
+    "json-server": "^0.14.2"
+  }
+}
