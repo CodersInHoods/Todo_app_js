@@ -1,3 +1,29 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "task": "Groceries",
+      "completed": true,
+      "id": 2
+    },
+    {
+      "task": "go to work",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "task": "do some useful stuff",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "task": "Read a book",
+      "completed": true,
+      "id": 5
+    },
+    {
+      "task": "fly to spain",
+      "completed": false,
+      "id": 6
+    }
+  ]
 }

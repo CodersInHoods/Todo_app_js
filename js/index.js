@@ -67,7 +67,7 @@ const renderTask = task => {
 
     taskEl.innerHTML = `
         <p class="todo_app__list__item__text">${task.task}</p>
-        <button class="todo_app__list__item__delete">x</button>`;
+        <button class="todo_app__list__item__delete"></button>`;
 
     taskListEl.prepend(taskEl);
 };
@@ -100,6 +100,9 @@ const handleFormSubmit = async event => {
     event.preventDefault();
 
     const userInputValue = event.target.newTodo.value;
+    // Prevent submission of empty input
+    if (!userInputValue) return false;
+
     const newTodoObj = {
         task: userInputValue,
         completed: false

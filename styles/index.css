@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -9,32 +10,139 @@ body {
 .todo_app {
     width: 90%;
     max-width: 500px;
-    margin: 0 auto;
-    background-color: antiquewhite;
+    margin: 100px auto 0;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .todo_app__header {
-    min-height: 100px;
-    background-color: aquamarine;
+    height: 150px;
+    background-color: #4a5357;
+    position: relative;
+    overflow: hidden;
+}
+
+.todo_app__header:after {
+    content: '';
+    display: block;
+    width: 150%;
+    height: 50px;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    background-color: #fff;
+    transform: rotate(-2deg);
+}
+
+.todo_app__header__form {
+    display: flex;
+    height: 90%;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo_app__header__form input {
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    font-weight: 300;
+    border: 2px solid transparent;
+    transition: .2s;
+    flex: 1 0 auto;
+    margin-right: 1em;
+}
+
+.todo_app__header__form input:focus {
+    border: 2px solid #de614f;
+}
+
+.todo_app__header__form button {
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    font-weight: 700;
+    min-width: 100px;
+    background-color: #de614f;
+    border: 2px solid transparent;
+    transition: .2s;
+    color: #fff2ef;
+}
+
+.todo_app__header__form button:hover {
+    border: 2px solid #fff2ef;
+    background-color: #d65e4c;
+    cursor: pointer;
 }
 
 .todo_app__list {
-
+    padding: 0 20px 20px;
 }
 
 .todo_app__list__item {
     display: flex;
+    align-items: center;
     list-style: none;
     justify-content: space-between;
-    background-color: cadetblue;
-    margin-bottom: 1em;
+    font-size: 1.2em;
+    padding: 1em;
+    border-radius: 4px;
+    border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+    transition: .2s;
+    color: #5d5d5d;
+}
+
+.todo_app__list__item:hover {
+    border-color: transparent;
+    background-color: #de614f;
+    color: #fff2ef;
+}
+
+.todo_app__list__item.completed {
+    background-color: transparent;
+    border-color: #eaeaea;
+    color: #000;
 }
 
 .todo_app__list__item__text {
-    background-color: green;
     pointer-events: none;
+    margin: 0;
+}
+
+.todo_app__list__item__text:first-letter {
+    text-transform: uppercase;
 }
 
 .todo_app__list__item.completed .todo_app__list__item__text {
     text-decoration: line-through;
+    opacity: 0.2;
+}
+
+.todo_app__list__item__delete {
+    outline: none;
+    background: url('../images/delete-button.svg') no-repeat center center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.todo_app__list__item__delete:hover {
+    transform: scale(1.1);
+}
+
+.todo_app__list__item:hover .todo_app__list__item__delete {
+    background-image: url('../images/delete-button-white.svg');
+}
+
+.todo_app__list__item.completed .todo_app__list__item__delete {
+    background-image: url('../images/delete-button.svg');
 }
