@@ -8,16 +8,18 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon.png">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <title>Coders In Hoods || Home page</title>
+    <title>Coders In Hoods || JS Todo App</title>
 </head>
 <body>
-    <div class="content_area">
-        <div class="content_area__logo">
-            <a href="https://www.youtube.com/channel/UC7NI9p0Z5CPrELOBO6qfVqw">
-                <img src="./images/logo.jpg" alt="CodersInHood Logo">
-            </a>
-        </div>
+<div class="todo_app">
+    <div class="todo_app__header">
+        <form class="todo_app__header__form">
+            <input type="text" name="newTodo" placeholder="Create new todo">
+            <button type="submit">Save</button>
+        </form>
     </div>
+    <div class="todo_app__list"></div>
+</div>
 </body>
 <script src="js/index.js"></script>
 </html>

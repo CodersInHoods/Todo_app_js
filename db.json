@@ -1,16 +1,3 @@
 {
-  "todos": [
-    {
-      "title": "Hello everyone!",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "title": "Test 2"
-    },
-    {
-      "title": "Test 3",
-      "id": 3
-    }
-  ]
+  "todos": []
 }
