@@ -1,6 +1,7 @@
 # Todo app js
 
 Todo app with pure JS and local server.
+![Todo app](https://github.com/CodersInHoods/Todo_app_js/blob/master/images/todo_app.png)
 
 ##### *As a user I should be able to:*
 
