@@ -31,7 +31,7 @@ https://codersinhoods.github.io/Todo_app_js/
 ## Community solutions:
 | # | User id | Contributor repo | Live|
 |---|---|---|---|
-| 1 |[CodersInHoods](https://github.com/CodersInHoods)|[Github Repo]|(https://github.com/CodersInHoods/Todo_app_js)||
-| 2 |[Tesser4](https://github.com/Tesser4)|[Github Repo]|(https://github.com/Tesser4/Todo_app_js)||
-| 3 |[AbhishekThorat](https://github.com/AbhishekThorat)|[Github Repo]|(https://github.com/abhishekthorat/Todo_app_js)||
+| 1 |[CodersInHoods](https://github.com/CodersInHoods)|[Github Repo](https://github.com/CodersInHoods/Todo_app_js)||
+| 2 |[Tesser4](https://github.com/Tesser4)|[Github Repo](https://github.com/Tesser4/Todo_app_js)||
+| 3 |[AbhishekThorat](https://github.com/AbhishekThorat)|[Github Repo](https://github.com/abhishekthorat/Todo_app_js)||
 
