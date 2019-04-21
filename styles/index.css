@@ -36,24 +36,29 @@ body {
 }
 
 .todo_app__header__form {
-    display: flex;
     height: 90%;
     padding: 0 20px;
+    display: flex;
     align-items: center;
+}
+
+.todo_app__header__form label {
+    flex: 1 0 auto;
+    display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .todo_app__header__form input {
+    flex: 1 0 auto;
     outline: none;
-    height: 40px;
-    border-radius: 20px;
-    padding: 0.5em 1em;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0.5em calc(100px + 1em) 0.5em 1em;
     font-size: 1.2em;
     font-weight: 300;
     border: 2px solid transparent;
     transition: .2s;
-    flex: 1 0 auto;
-    margin-right: 1em;
 }
 
 .todo_app__header__form input:focus {
@@ -61,22 +66,25 @@ body {
 }
 
 .todo_app__header__form button {
+    position: absolute;
     outline: none;
     height: 40px;
     border-radius: 20px;
-    padding: 0.5em 1em;
+    padding: 0 1em;
     font-size: 1.2em;
     font-weight: 700;
-    min-width: 100px;
+    width: 100px;
     background-color: #de614f;
-    border: 2px solid transparent;
+    border: none;
     transition: .2s;
     color: #fff2ef;
+    top: 5px;
+    right: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .todo_app__header__form button:hover {
-    border: 2px solid #fff2ef;
-    background-color: #d65e4c;
+    background-color: #ee6954;
     cursor: pointer;
 }
 
