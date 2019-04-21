@@ -1,29 +1,24 @@
 {
   "todos": [
     {
-      "task": "Groceries",
+      "task": "Play football",
       "completed": true,
+      "id": 1
+    },
+    {
+      "task": "Fly to Spain",
+      "completed": false,
       "id": 2
     },
     {
-      "task": "go to work",
+      "task": "Go to work",
       "completed": false,
       "id": 3
     },
     {
-      "task": "do some useful stuff",
+      "task": "Do some useful stuff",
       "completed": false,
       "id": 4
-    },
-    {
-      "task": "Read a book",
-      "completed": true,
-      "id": 5
-    },
-    {
-      "task": "fly to spain",
-      "completed": false,
-      "id": 6
     }
   ]
 }
